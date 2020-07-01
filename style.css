@@ -1,0 +1,34 @@
+#headlines {
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    height: 40vh;
+}
+
+#headlines .primary {
+    flex: 2 1 auto;
+    flex-basis: 100%;
+}
+
+#headlines .secondary {
+    flex: 1 1 auto;
+    flex-basis: 50%;
+}
+
+#news {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#news h2 {
+    width: 100%;
+}
+
+#categories {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#categories h2 {
+    width: 100%;
+}
