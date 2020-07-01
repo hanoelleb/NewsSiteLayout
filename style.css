@@ -87,6 +87,21 @@
 	width: 100vw;
     }
 
+    #news {
+        display: inline;
+    }
+
+    .article {
+        display: flex;
+	width: 100vw;
+	align-items: center;
+    }
+
+    .article .artThumbnail {
+        height: 100px;
+	width: 100px;
+    }
+
      #categories .catContainer {
         width: 100vw;
     }
