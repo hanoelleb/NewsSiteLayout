@@ -1,5 +1,11 @@
-//changes at width 750
+//changes at width < 750
 
+
+//articles goes to 3 columns < 1000
+//articles goes to different view at < 750 
+
+//categories goes to 2 columns < 1000
+//goes to 1 column at < 750
 
 //section 1 headlines
 //headlines changes width at 750
@@ -22,19 +28,19 @@ function headlines() {
     var head1 = document.createElement('div');
     head1.classList.add('headline');
     head1.classList.add('primary');
-    head1.style.cssText = 'background-color: red; width: 50vw; height: 18vh';
+    head1.style.backgroundColor= 'red';
     headlines.appendChild(head1);
 
     var head2 = document.createElement('div');
     head2.classList.add('headline');
     head2.classList.add('secondary');
-    head2.style.cssText = 'background-color: orange; width: 50vw; height: 18vh';
+    head2.style.backgroundColor= 'orange';
     headlines.appendChild(head2);
 
     var head3 = document.createElement('div');
     head3.classList.add('headline');
     head3.classList.add('secondary');
-    head3.style.cssText = 'background-color: gold; width: 50vw; height: 18vh';
+    head3.style.backgroundColor= 'gold';
     headlines.appendChild(head3);
     
     content.appendChild(headlines);	
@@ -51,15 +57,15 @@ function latestNews() {
 
     for (let i = 0; i < 8; i++) {
         var article = document.createElement('div');
-	article.style.cssText = 'width: 23vw';
+	article.className = 'article';
 
 	var img = document.createElement('div');
-	img.style.cssText = 'width: 100%; height: 20vh';
+	img.className = 'artThumbnail'
 	img.style.backgroundColor = getRandomColor();
 	article.appendChild(img);
 
         var title = document.createElement('span');
-	title.style.width = '100%';
+	title.className = 'artTitle';
 	title.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit';
 	article.appendChild(title);
 
@@ -79,14 +85,14 @@ function categories() {
 
     for (let i = 0; i < 6; i++) {
         var catContainer = document.createElement('div');
-	catContainer.style.cssText = 'width: 30vw; height: 80vh;';
+	catContainer.className = 'catContainer';
 
 	var catHead = document.createElement('h3');
 	catHead.innerHTML = 'Lorem >';
 	catContainer.appendChild(catHead);
 
 	var img = document.createElement('div');
-	img.style.cssText = 'width: 100%; height: 33%;';
+	img.className = 'catImg';
 	img.style.backgroundColor = getRandomColor();
 	catContainer.appendChild(img);
 

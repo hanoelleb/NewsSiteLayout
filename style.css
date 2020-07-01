@@ -2,11 +2,11 @@
     display: flex;
     flex-direction: column; 
     flex-wrap: wrap;
-    height: 40vh;
+    height: 60vh;
 }
 
 #headlines .primary {
-    flex: 2 1 auto;
+    flex: 1 1 auto;
     flex-basis: 100%;
 }
 
@@ -24,6 +24,20 @@
     width: 100%;
 }
 
+.article {
+    width: 23vw;
+    margin: 5px;
+}
+
+.article .artThumbnail {
+    width: 100%; 
+    height: 23vh;
+}
+
+.article .artTitle {
+    width: 100%;
+}
+
 #categories {
     display: flex;
     flex-wrap: wrap;
@@ -31,4 +45,49 @@
 
 #categories h2 {
     width: 100%;
+}
+
+#categories .catContainer {
+    width: 30vw; 
+    height: 80vh;
+    margin: 5px;
+}
+
+#categories .catImg {
+    width: 100%;
+    height: 33%;
+}
+
+@media only screen and (max-width: 1000px) {
+    #news {
+	margin: 10px;
+    }
+
+    .article {
+       width: 30vw;
+    }
+
+    #categories .catContainer {
+        width: 46vw;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #headlines {
+        width: 100vw;
+    }
+
+    #headlines .primary {
+        flex-basis: auto;
+	width: 100vw;
+    }
+
+    #headlines .secondary {
+        flex-basis: auto;
+	width: 100vw;
+    }
+
+     #categories .catContainer {
+        width: 100vw;
+    }
 }
